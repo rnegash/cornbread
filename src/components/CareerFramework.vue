@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <table>
       <caption>
         Dinosaurs in the Jurassic period
@@ -23,9 +23,9 @@
               <td>
                 <b>{{ skill.name }}</b
                 ><br /><br />
-                {{ skill.description }}
+                <em>{{ skill.description }}</em>
               </td>
-              <td v-for="level in skill.levels" :key="level">
+              <td v-for="level in skill.levels" :key="level" class="level">
                 <b>{{ level.level }}</b
                 ><br />
                 <ul v-for="criteria in level.criteria" :key="criteria">
@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "CareerFramework",
   props: {
     careerFrameworkData: Array
   }
@@ -53,19 +53,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
 ul {
   list-style-type: none;
   padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 
 table {
@@ -82,5 +72,12 @@ table {
 .category {
   padding: 15px;
   writing-mode: sideways-lr;
+}
+.level {
+  padding: 10px;
+}
+
+.level b {
+  text-transform: capitalize;
 }
 </style>
