@@ -2,30 +2,35 @@
   <div class="hello">
     <!-- <h1>{{ skills }}</h1> -->
     <table>
-      <thead>
-        <tr>
-          <td>-</td>
-          <th>novice</th>
-          <th>beginner</th>
-          <th>competent</th>
-          <th>proficient</th>
-          <th>expert</th>
-        </tr>
-      </thead>
+      <caption>
+        Dinosaurs in the Jurassic period
+      </caption>
       <tbody>
-        <tr v-for="category in careerFrameworkData" :key="category.category">
+        <tr
+          v-for="category in careerFrameworkData"
+          :key="category.category"
+          class="skills"
+        >
           <th
             colspan="2"
             :rowspan="category.skills.length"
             :key="category.category"
+            class="category"
           >
             {{ category.category }}
           </th>
           <table>
             <tr v-for="skill in category.skills" :key="skill">
-              {{
-                skill.name
-              }}
+              <td>
+                <b>{{ skill.name }}</b
+                ><br />
+                {{ skill.description }}
+              </td>
+              <td v-for="level in skill.levels" :key="level">
+                <b>{{ level.level }}</b
+                ><br />
+                {{ level.criteria.join("####") }}
+              </td>
             </tr>
           </table>
         </tr>
@@ -63,5 +68,15 @@ a {
 table {
   display: table;
   width: 100%;
+}
+.skills {
+  display: table;
+}
+.skills:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+.category {
+  padding: 15px;
+  writing-mode: sideways-lr;
 }
 </style>
