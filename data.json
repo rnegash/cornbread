@@ -1,0 +1,709 @@
+[
+  {
+    "category": "Engineering Hard Skills",
+    "skills": [
+      {
+        "name": "Programming",
+        "description": "Design and implementation of algorithms and data structures to solve computational problems. Writing effective, efficient, readable, robust, idiomatic, and reusable software code. Knowledge of and fluency in one or more (high-level) programming languages.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Learns what makes code readable by consuming Babbel-internal guidelines and external literature on the matter.",
+              "Learns about coding best practices by consuming Babbel-internal guidelines and external literature on the matter. Realises when code violates these practices.",
+              "Starts using debugging tools to debug changes they made themself"
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Consistently writes readable code, with clarity of intent for themself and others. Might need help identifying expected edge cases and potential errors, but then writes code that accounts for them.",
+              "Starts to apply essential coding best practices, as learned by consuming Babbel-internal guidelines and external literature on the matter",
+              "Uses a systematic approach to debug issues located within a single service."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Writes readable code that accounts for expected edge cases and errors",
+              "Consistently applies established coding best practices and introduces new best practices in the codebase where appropriate.",
+              "Experienced at using systematic debugging to diagnose all issues located to a single service. Uses systematic debugging to diagnose cross service issues, sometimes with help from more senior engineers."
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Leaves code better than they found it, be that in terms of readability, testability, efficiency, robustness.  Refactors code as necessary when working in the area",
+              "Proficient at using systematic debugging to diagnose all issues within the scope of their domain. Contributes to systematic debugging efforts across domains."
+            ]
+          },
+          {
+            "level": "advanced",
+            "criteria": [
+              "Uses advanced programming techniques deliberately and only sparingly to solve complex problems elegantly while being mindful of increasing the cognitive load for themself and others.",
+              "Leads wide-ranging coding language shifts/code refactors in expertise area (front/back/mobile) or in a cross-team project endeavour (e.g leads an org-wide movement from php to node.js)."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Software Architecture",
+        "description": "Design of the structure of a software application or service by defining the composition of components and their interaction with each other. Designing for maintainability, security, reusability, extensibility, and scalability. Knowledge of and application of relevant design patterns and paradigms.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Develops knowledge of a single component of their team's architecture in their domain"
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Is knowledgable about at least one of their team's components in their domain and can work self-sufficiently with this component.",
+              "Learns about software design paradigms and patterns and realises when code violates them. Starts to apply them independently."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Is knowledgable about all of their team's components in their domain and can work self-sufficiently with those components. Can work on other teams' components with guidance.",
+              "Consistently applies appropriate software design paradigms and patterns"
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Is self-sufficient in at least one large area of the product (e.g., end2end implementation of a major feature across all tech stacks, or the majority of the code base in their domain of their organizational area) with a high-level understanding of its architecture"
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Go-to-expert on large sections of our codebase",
+              "Designs clean, performant architecture for new services and leads remodeling of old services"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Systems Architecture",
+        "description": "Organization of multiple software applications and services into one or more fault-tolerant system, including their communication with each other.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Knows the immediate system landscape where the team's components are embedded, and about the data flows between the systems"
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Shapes the team's components to best adhere to the system architecture they are placed in. "
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Influences the immediate system landscape where the team's components are embedded, as well as the data flows between the systems to improve stability, performance, and scalability."
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Knows Babbel's entire system landscape and is self-sufficient in a large portion of it. Influences the organization-wide system architecture to improve stability, performance, and scalability across major business-critical systems"
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Leads design and improvement efforts of  the organization-wide system architecture to improve stability, performance, and scalability across major business-critical systems",
+              "Leads incident response across the engineering organization as needed. Uses systematic debugging to diagnose issues across the organization."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Testing",
+        "description": "Design and implementation of automated tests at various levels, that verify the validity of software routines, applications, services, or entire systems in accordance with established testing strategies as well as the design of these strategies.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Understands existing low-level tests and learns what makes code testable by consuming Babbel-internal guidelines and external literature on the matter.",
+              "Learns about the different levels of the testing pyramid and their respective pros and cons. Learns about their team's testing strategy with regards to the testing pyramid."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Writes code with testability in mind",
+              "Understands the testing pyramid and writes unit tests in accordance with it.  Understands there may be edge cases and attempts to cover these cases when testing",
+              "Understands their team's testing strategy"
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Consistently writes code that is easily testable",
+              "Writes unit tests as well as higher level tests with help from more experienced engineers. Always tests the happy path as well as expected edge cases and errors.",
+              "Contributes to the definition or improvement of their team's testing strategy. Uses quality metrics to identify gaps in the team's test coverage"
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Writes low- and high-level tests in accordance with the testing pyramid",
+              "Drives the definition or improvement of their team's testing strategy. Contributes to the definition or improvement of organization-wide testing strategies."
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Drives the definition or improvement of organization-wide testing strategies."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Observability & Monitoring",
+        "description": "Measurement and analysis of technical and business metrics at network, system, and application level. Designing for maximum signal and minimum noise. Logging and tracing within and across systems. Implementation of effective alerting.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Learns about their team's monitoring strategy and their established tooling."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Understands their team's monitoring strategy, can use the team's established monitoring tools relevant for their domain, and can interpret the monitoring data",
+              "May provide on-call support during business hours for (some of) their team's services. When incidents occur, may rely on support from others to handle them effectively."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Incorporates monitoring into their routine, contributes to the definition or improvement of their team's monitoring strategy, and customizes monitoring tools to adhere to it",
+              "Provides on-call support during business hours for their team's services."
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Drives the definition or improvement of their team's monitoring strategy. Contributes to the definition or improvement of organization-wide monitoring strategies.",
+              "Is capable of providing 24x7 on-call support for their organizational area."
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Drives the definition or improvement of organization-wide monitoring strategies."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Documentation",
+        "description": "Externalization and preservation of knowledge about software applications, services, and systems for yourself and others in a concise, precise, understandable, pragmatic, and maintainable manner.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Writes code comments that explain the WHY, not the WHAT",
+              "Consumes provided documentation, in order to acquire a better understanding of the matter at hand."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Adds documentation in appropriate form (e.g. code comment, README, documentation) whenever unclarity could arise.  Revises documentation when someone asks for clarifications.",
+              "Pro-actively discovers and consumes internal and external documentation to self-sufficiently acquire a better understanding of the matter at hand."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Contributes to their team's documentation. Identifies gaps in documentation and fills them swiftly. Keeps documentation up-to-date.",
+              "Pro-actively discovers, consumes, and shares relevant internal and external documentation to self-sufficiently acquire a better understanding of the matter at hand."
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Compiles documentation at different levels of abstraction for technical audiences. "
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Compiles documentation at different levels of abstraction for technical as well as non-technical audiences. "
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Agile & Lean Methodologies",
+        "description": "Knowledge and application of agile & lean methodologies to collaboratively and cross-functionally build and deliver software increments in close collaboration with customers and other stakeholders. Continuous improvement of our products as well as our ways of working.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Learns about the 4 values and 12 principles of the Manifesto for Agile Software Development by Kent Beck et al.",
+              "Participates in all agile ceremonies of their team."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Raises awareness when their team violates agile principles.",
+              "Actively contributes to all agile ceremonies of their team."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Brings suggestions on how to improve their team's adherence to agile principles and contributes to the implementation of these improvements.",
+              "May (co-)facilitate agile ceremonies for their team. Brings suggestions on how to improve those ceremonies and contributes to the implementation of these improvements.",
+              "Contributes not only to building and shipping product solutions but also to the discovery and validation of them"
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Leads efforts to identify and implement improvements to the teams' adherence to agile principles. Raises awareness for when the organization violates agile principles, brings suggestions, and contributes to their implementation.",
+              "Facilitates agile ceremonies of their team. Leads efforts to identify and implement improvements to the team's agile ceremonies. "
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Leads efforts to identify and implement improvements to the organization's adherence to agile principles.",
+              "Effectively facilitates agile ceremonies for other teams"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Domain-Based Skill Diversification",
+        "description": "Expansion of one’s hard skills beyond the general Engineering requirements by acquiring skills in other, relevant domains (e.g., User Experience Design, Linguistics, Marketing, Business Economics, …) and applying these skills to further enhance the product development.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Learns more about other parts of the business outside of Engineering by asking questions and consuming material provided to them as well as through close collaboration with colleagues from other functions."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Expands into other functions with support from their line manager or team. Takes training, participates in job shadowing, or otherwise receives mentoring in these functions. Starts to apply these skills by performing basic tasks with guidance."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Performs basic tasks in other functions in a self sufficient manner"
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Promotes skill diversification in their team by actively encouraging and supporting their peers to acquire domain-based skills."
+            ]
+          },
+          { "level": "expert", "criteria": [] }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Babbel-wide soft skills",
+    "skills": [
+      {
+        "name": "Decision (taking)",
+        "description": "Takes effective decisions in a timely manner, sometimes with incomplete information.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Learns when and how to take decisions individually and in a group as well as what information is needed to make a thorough decision."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Understands decisions and tradeoffs that reach beyond their own self, and impacts their team.",
+              "Consumes Architectural Decision Records to understand historical decisions and bases their own decision upon these."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Makes well-reasoned decisions and tradeoffs that impact their team. Understands when a decision has an impact beyond their own team and creates awareness for this.",
+              "Knows when and how to compile and publish an Architectural Decision Record. ",
+              "Follows a data-oriented based approach when making decisions by seeking empirical evidence through proof of concepts, tests, existing events data, external research etc"
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Makes well-reasoned decisions and tradeoffs even with incomplete information. Facilitates decision-making in their team. Contributes to cross-team decision-making."
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Drives decision-making of decisions that affect multiple teams by fostering an inclusive and psychologically safe environment, where the different perspectives and needs of those teams are being shared and considered and trade-offs are being evaluated in an objective manner."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Prioritization",
+        "description": "Focuses and allocates time on what’s mission-critical and says no to what’s just nice to do.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Understands and acts according to task prioritisation provided by their line manager or team. Raises blockers that hinder their progress with their line manager and/or team."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Understands their team's priorities and prioritizes their own tasks in accordance with their team's priorities. Avoids getting caught up in unimportant details and 'bikeshedding'."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Understands the priorities of their organizational area and contributes to the prioritization of the team's tasks in accordance with these higher-level priorities. Creates awareness for dependencies and blockers to the team and brings suggestions on how to resolve them."
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Understands higher-level business priorities and contributes to the prioritization of their organizational area's work in acc/ordance with these higher-level priorities. Creates awareness for dependencies and blockers and contributes to efforts to resolve them."
+            ]
+          },
+          { "level": "expert", "criteria": [] }
+        ]
+      },
+      {
+        "name": "Ownership",
+        "description": "Takes initiative for a topic. Shows responsibility for the quality and timeliness of an outcome even when working with others.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Demonstrates responsibility for assigned tasks.  This may manifest itself in asking questions; knowing when to ask for help; and discussing progress honestly and accurately."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Takes initiative for tasks, self-assigns them (in accordance with team priorities) and demonstrates responsibility for them"
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Demonstrates responsibility for the success of their team's goals by contributing to the team's efforts, identifying opportunities for further improvement, and raising awareness for blockers or risks to the goals."
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Demonstrates responsibility for the success of the goals of their organizational area by contributing to the shared efforts, identifying opportunities for further improvement, and raising awareness for blockers or risks to the goals."
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Empowers and supports others to demonstrate responsibility by helping them understand how they can contribute to team/organization efforts and delegating responsibility to them."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Effective Communication",
+        "description": "We get a message across in a targeted, constructive, effective and respectful way, even when we disagree.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Communicates in a respectful way, even when they disagree with another party."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Usually communicates with clear intent. May require assistance in making the messaging precise or adapting it to the respective audience. Learns about nonverbal communication."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Communicates effectively, clearly, concisely and in an audience-oriented way, in written and verbal form. Actively listens to others and ensures they are understood. Pays attention to nonverbal communication.",
+              "Can explain complex problems and solutions to people inside their domain of expertise (e.g., \"Mobile\", \"DevOps\", \"Test Automation\")"
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Communicates complex problems and solutions in an effective manner across functions. They are able to engage small to mid-sized groups of engineers."
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Able to engage heterogeneous mid-sized audiences with their messages."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Objective Setting",
+        "description": "Sets and pursues ambitious objectives with measurable milestones that move Babbel forward. Likewise, sets and pursues ambitious personal development objectives to further grow in their professional career.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Understands their teams short-term goals (e.g., sprint goals or project goals) as well as their team's long-term goals and how their work contributes to them.",
+              "Defines expectations with regards to their professional growth together with their line manager."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Can explain how their individual work contributes to their team's OKRs and how their team's OKRs contribute to OKRs of all higher levels. Learns how to formulate meaningful, ambitious, and measurable OKRs.",
+              "Sets meaningful, ambitious, and measurable objectives for their professional growth together with their line manager. Relies on support from their manager to pursue them."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Participates in formulation of team OKRs and OKRs for their organizational area.  Participates in ideation of actions to contribute to team and organisation KRs.",
+              "Proposes SMART objectives for their professional growth and agrees with their line manager on them. Identifies actions that contribute to these objectives. Pro-actively discusses their progress towards their objectives with their line manager and requests their support where needed."
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Can offer a critique of an OKR and suggests improvements. Identifies dependencies on OKRs of other organizational units and creates awareness for this.",
+              "Independently identifies opportunities for their further professional growth.  Self-sufficiently formulates meaningful, ambitious, and measurable objectives.  Pursues objectives proactively."
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Facilitates the OKR setting process for their team or organizational area. Helps to resolve dependencies between OKRs where possible. Contributes to the formulation of higher-level OKRs where requested.",
+              "Supports others in identifying professional growth opportunities and helps formulate meaningful, ambitious, and measurable objectives."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Feedback",
+        "description": "Regularly provides constructive feedback and is open to receiving feedback",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Is receptive to constructive feedback",
+              "Works with their Line Manager to learn about what is \"good feedback\"; what is \"bad feedback\"; and when it is appropriate to give feedback. Starts to apply this knowledge when delivering feedback. May rely on help to formulate constructive feedback and may need to be nudged to provide feedback."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Effectively incorporates feedback that they receive",
+              "Understands what is \"good feedback\"; what is \"bad feedback\"; and when it is appropriate to give feedback. Applies this knowledge when delivering feedback."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Proactively solicits feedback from others.",
+              "Pro-actively gives timely and helpful feedback to peers and managers."
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Fosters a heathy feedback culture in their team by frequently seeking feedback from, and providing constructive feedback to, their team members and by encouraging their peers to do the same.  Also provides feedback to colleagues outside of their team."
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Fosters a heathy feedback culture across teams by seeking and providing constructive feedback frequently to their team members."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cooperative collaboration",
+        "description": "Understands themself as part of a team of people who all bring in valuable different backgrounds & experiences and embraces it",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Collaborates with other team members and seeks mentoring support from more experienced team members. Adheres to established working agreements. ",
+              "Is positive and constructive in team interactions",
+              "Accepts or rejects meeting invites.  Turns up on time to meetings having read agenda/pre-read material"
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Speaks up when others break working agreements",
+              "Is thoughtful about process; raises concerns when they feel the team could work more effectively. May require assistance in identifying potential solutions."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Regularly partners with more experienced members of the team.",
+              "Works constructively with colleagues from different functions as well as immediate stakeholders; ensures solutions take all of these fields into account.",
+              "Identifies weaknesses in the team's processes or collaboration and proposes changes as needed for the whole team to work more effectively"
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Proactively drives the adoption of sharing within the team, for example by organising pairing with less experienced members of the team; or by conducting knowledge sharing sessions. Makes these accessible and successfully motivates others to join in.",
+              "Leads efforts to improve the team's processes or collaboration. Evaluates the impact of their efforts and adjusts course accordingly. Identifies weaknesses in cross-team collaboration or processes and proposes changes as needed for them to work more effectively"
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Supports other people in the team and company in their domain of expertise.",
+              "Leads efforts to improve cross-team processes or collaboration. Evaluates the impact of their efforts and adjusts course accordingly."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Engineering-specific soft skills",
+    "skills": [
+      {
+        "name": "Knowledge Sharing",
+        "description": "Sharing knowledge, experience, expertise, or skills with individuals or groups, internally or externally, through different means (mentoring, coaching, collaboration, teaching, writing, presenting, ...).",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Shares their knowledge when prompted with their team. May require assistance on how best to share that knowledge."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Identifies opportunities to share their knowledge with their team and pursues those opportunities pro-actively. Develops a proposal how to share their knowledge and may request guidance. "
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Frequently and pro-actively shares their knowledge with their team without requiring prompting or assistance.",
+              "Makes other members of their team better through code reviews, documentation, and 1-on-1 collaboration."
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Fosters a culture of knowledge sharing in their team, not only by leading by example, but by identifying opportunities for others and assisting them. Identifies and pursues opportunities to share knowledge across teams.",
+              "Actively fights code silos by ensuring that expertise on pieces of code are not just in one person's head",
+              "Communicates with the wider technology community by writing blog posts, open sourcing code, talking at meetups, etc",
+              "Mentors and coaches less-experienced members of their team in an open, respectful, flexible, empathetic manner."
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Fosters a culture of knowledge sharing across the organization not only by leading by example but by identifying opportunities for others and assisting them.",
+              "Attends conferences as a speaker",
+              "Mentors and coaches less-experienced colleagues across teams. Pro-actively seeks out such mentoring opportunities specifically to create team redundancy and backfill ability."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Problem solving",
+        "description": "Application of knowledge - the difference between mere understanding of problems and their solutions and the capacity to discover the solutions.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Will need help in solving many problems.  Asks lots of questions, which is encouraged.  The questions may be ill-formed, and that's ok.  Demonstrates a will to overcome \"unknown unknowns\" when they are pointed out to them."
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Knows the right time to ask for help/input: after applying some thought, but before stewing on it.  Is able to ask sensible questions when finding help.  May need assistance in verifying solutions."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Is capable of creating solutions to problems that are generally accepted by the affected teams. Is fully aware of the possibility of a gap in their knowledge and proactively works towards closing them once discovered.",
+              "When finding an issue in another team, raises the issue skillfully with that team (including with appropriate urgency)"
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Splits complex deliverables and projects into manageable pieces, milestones, and thin functional slices. Pro-actively researches and proposes new technologies or best practices positively impacting multiple teams"
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": []
+          }
+        ]
+      },
+      {
+        "name": "Customer centricity",
+        "description": "Knowledge of and empathy with our customers, their characteristics, needs, struggles, and desires. Utilizing this knowledge and empathy to shape our product development, so that we deliver solutions that meet their needs in a timely fashion.",
+        "levels": [
+          {
+            "level": "novice",
+            "criteria": [
+              "Demonstrates curiosity to learn about Babbel's customers, their characteristics, needs, struggles, and desires. Understands how we intend to create value for our customers through our company and team goals. "
+            ]
+          },
+          {
+            "level": "beginner",
+            "criteria": [
+              "Is familiar with our diverse customer experiences and needs.  Customers can include our users, stakeholders, or our fellow Babbelonians in other teams."
+            ]
+          },
+          {
+            "level": "competent",
+            "criteria": [
+              "Strengthens their empathy with our customers by reading user feedback reports, participating in user interviews, and using Babbel's products themself."
+            ]
+          },
+          {
+            "level": "proficient",
+            "criteria": [
+              "Demonstrates empathy for our customers by applying their knowledge of our customers to influence product decisions. Uses data from/about our customers to back their arguments about."
+            ]
+          },
+          {
+            "level": "expert",
+            "criteria": [
+              "Fosters a culture of customer centricity in their team and across the organization."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
