@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <!-- <h1>{{ skills }}</h1> -->
     <table>
       <caption>
         Dinosaurs in the Jurassic period
@@ -23,13 +22,17 @@
             <tr v-for="skill in category.skills" :key="skill">
               <td>
                 <b>{{ skill.name }}</b
-                ><br />
+                ><br /><br />
                 {{ skill.description }}
               </td>
               <td v-for="level in skill.levels" :key="level">
                 <b>{{ level.level }}</b
                 ><br />
-                {{ level.criteria.join("####") }}
+                <ul v-for="criteria in level.criteria" :key="criteria">
+                  <li>
+                    {{ criteria }}
+                  </li>
+                </ul>
               </td>
             </tr>
           </table>
@@ -68,6 +71,7 @@ a {
 table {
   display: table;
   width: 100%;
+  text-align: left;
 }
 .skills {
   display: table;
