@@ -78,6 +78,7 @@ ul {
 }
 
 .skills-description {
+  width: 250px;
   padding: 10px;
   vertical-align: top;
 }
@@ -89,7 +90,7 @@ ul {
 .category {
   padding: 0px 15px;
   white-space: nowrap;
-  max-width:1em;
+  max-width: 1em;
   transform: rotate(-90deg);
 }
 
