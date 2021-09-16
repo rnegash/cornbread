@@ -61,6 +61,10 @@ table {
   padding: 10px;
 }
 
+.skills {
+  width: 500px;
+}
+
 .skills:nth-child(odd) {
   background-color: #e8e8e8;
 }
