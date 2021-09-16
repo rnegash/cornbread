@@ -80,6 +80,7 @@ ul {
 
 .skills-description {
   padding: 10px;
+  vertical-align: top;
 }
 
 .skills:nth-child(odd) {
