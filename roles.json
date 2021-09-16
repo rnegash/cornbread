@@ -98,7 +98,6 @@
       {
         "category": "babbel wide soft skills",
         "note": "Proficient in at least 4",
-
         "levels": {
           "Decision (taking)": "Competent",
           "Prioritization": "Competent",
@@ -126,7 +125,7 @@
     "expectations": [
       {
         "category": "engineering hard skills",
-        "note": "Proficient in at least 3",
+        "note": "Expert in at least 3",
         "levels": {
           "Programming": "Proficient",
           "Software Architecture": "Proficient",
@@ -140,7 +139,7 @@
       },
       {
         "category": "babbel wide soft skills",
-        "note": "Proficient in at least 3",
+        "note": "Expert in at least 3",
         "levels": {
           "Decision (taking)": "Proficient",
           "Prioritization": "Proficient",
@@ -153,7 +152,7 @@
       },
       {
         "category": "engineering specific  soft skills",
-        "note": "Proficient in at least 1",
+        "note": "Expert in at least 1",
         "levels": {
           "Knowledge Sharing": "Proficient",
           "Problem solving": "Proficient",
