@@ -16,12 +16,17 @@
           </th>
           <table class="skill-table">
             <tr v-for="skill in category.skills" :key="skill">
-              <td>
-                <b>{{ skill.name }}</b
-                ><br /><br />
+              <th class="skills">
+                <b>{{ skill.name }}</b>
+                <br /><br />
                 <em>{{ skill.description }}</em>
-              </td>
-              <td v-for="level in skill.levels" :key="level" class="level">
+              </th>
+              <td
+                v-for="level in skill.levels"
+                :key="level"
+                :class="level.level"
+                class="level"
+              >
                 <b>{{ level.level }}</b
                 ><br />
                 <ul v-for="criteria in level.criteria" :key="criteria">
