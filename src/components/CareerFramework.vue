@@ -87,7 +87,7 @@ ul {
 .category {
   padding: 0px 15px;
   white-space: nowrap;
-  max-width:10px;
+  max-width:1em;
   transform: rotate(-90deg);
 }
 
