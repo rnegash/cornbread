@@ -17,7 +17,7 @@
           <table class="skill-table">
             <tr v-for="skill in category.skills" :key="skill">
               <th class="skills-description">
-                <b>{{ skill.name }}</b>
+                <strong>{{ skill.name }}</strong>
                 <br /><br />
                 <em>{{ skill.description }}</em>
               </th>
@@ -28,7 +28,7 @@
                 class="level"
               >
                 <div v-if="level.criteria.length">
-                  <b>{{ level.level }}</b>
+                  <strong>{{ level.level }}</strong>
                   <br />
                   <ul v-for="criteria in level.criteria" :key="criteria">
                     <li>
