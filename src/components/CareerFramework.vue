@@ -11,7 +11,7 @@
           :rowspan="category.skills.length"
           class="skills"
         >
-          <th :key="category.category" class="category">
+          <th scope="row" :key="category.category" class="category">
             {{ category.category }}
           </th>
           <table class="skill-table">
