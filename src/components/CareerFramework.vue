@@ -79,7 +79,7 @@ table {
 }
 .category {
   padding: 0px 15px;
-  writing-mode: sideways-lr;
+  transform: rotate(-90deg);
 }
 .level {
   padding: 10px;
