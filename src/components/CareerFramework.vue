@@ -27,16 +27,20 @@
                 :class="level.level"
                 class="level"
               >
-                <b>{{ level.level }}</b
-                ><br />
-                <ul v-for="criteria in level.criteria" :key="criteria">
-                  <li>
-                    {{ criteria }}
-                  </li>
-                </ul>
+                <div v-if="level.criteria.length">
+                  <b>{{ level.level }}</b>
+                  <br />
+                  <ul v-for="criteria in level.criteria" :key="criteria">
+                    <li>
+                      {{ criteria }}
+                    </li>
+                  </ul>
+                </div>
               </td>
             </tr>
           </table>
+
+
         </tr>
       </tbody>
     </table>
