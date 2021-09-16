@@ -19,7 +19,7 @@
             {{ category.category }}
           </th>
 
-          <table>
+          <table class="skill-table">
             <tr v-for="skill in category.skills" :key="skill">
               <td>
                 <b>{{ skill.name }}</b
