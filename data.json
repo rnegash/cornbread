@@ -38,7 +38,7 @@
             ]
           },
           {
-            "level": "advanced",
+            "level": "expert",
             "criteria": [
               "Uses advanced programming techniques deliberately and only sparingly to solve complex problems elegantly while being mindful of increasing the cognitive load for themself and others.",
               "Leads wide-ranging coding language shifts/code refactors in expertise area (front/back/mobile) or in a cross-team project endeavour (e.g leads an org-wide movement from php to node.js)."

@@ -72,7 +72,6 @@ ul {
 
 .skills-description {
   padding: 10px;
-  width: 500px;
 }
 
 .skills:nth-child(odd) {
