@@ -1,0 +1,165 @@
+[
+  {
+    "role": "junior",
+    "description": "Starts to influence the product development by acquiring first knowledge about our customers and developing empathy with them.",
+    "expectations": [
+      {
+        "category": "engineering hard skills",
+        "levels": {
+          "Programming": "Beginner",
+          "Software Architecture": "Novice",
+          "Systems Architecture": "N/A",
+          "Testing": "Beginner",
+          "Observability & Monitoring": "Novice",
+          "Documentation": "Novice",
+          "Agile & Lean Methodologies": "Novice",
+          "Domain-Based Skill Diversification": "Novice"
+        }
+      },
+      {
+        "category": "babbel wide soft skills",
+        "levels": {
+          "Decision (taking)": "Novice",
+          "Prioritization": "Novice",
+          "Ownership": "Novice",
+          "Effective Communication": "Novice",
+          "Objective Setting": "Novice",
+          "Feedback": "Novice",
+          "Cooperative collaboration": "Novice"
+        }
+      },
+      {
+        "category": "engineering specific  soft skills",
+        "levels": {
+          "Knowledge Sharing": "Novice",
+          "Problem solving": "Novice",
+          "Customer centricity": "Novice"
+        }
+      }
+    ]
+  },
+  {
+    "role": "professional",
+    "description": "Provides guidance to less experienced engineers on their team. Helps to grow the Engineering department by participating in the recruitment process. May contribute to the design and improvement of this process. Influences the product development by applying knowledge about our customers and demonstrating empathy with them.",
+    "expectations": [
+      {
+        "category": "engineering hard skills",
+        "levels": {
+          "Programming": "Competent",
+          "Software Architecture": "Competent",
+          "Systems Architecture": "Beginner",
+          "Testing": "Competent",
+          "Observability & Monitoring": "Competent",
+          "Documentation": "Competent",
+          "Agile & Lean Methodologies": "Competent",
+          "Domain-Based Skill Diversification": "Beginner"
+        }
+      },
+      {
+        "category": "babbel wide soft skills",
+        "levels": {
+          "Decision (taking)": "Competent",
+          "Prioritization": "Competent",
+          "Ownership": "Beginner",
+          "Effective Communication": "Competent",
+          "Objective Setting": "Competent",
+          "Feedback": "Competent",
+          "Cooperative collaboration": "Competent"
+        }
+      },
+      {
+        "category": "engineering specific  soft skills",
+        "levels": {
+          "Knowledge Sharing": "Competent",
+          "Problem solving": "Competent",
+          "Customer centricity": "Competent"
+        }
+      }
+    ]
+  },
+  {
+    "role": "senior",
+    "description": "Supports less experienced engineers on their team and other teams in their professional growth. Helps to grow the Engineering department by participating in the recruitment process. May contribute to the design and improvement of this process. Shapes the product development by applying knowledge about our customers, demonstrating empathy with them, and leveraging their deep understanding of technology.",
+    "expectations": [
+      {
+        "category": "engineering hard skills",
+        "note": "Proficient in at least 4",
+        "levels": {
+          "Programming": "Competent",
+          "Software Architecture": "Competent",
+          "Systems Architecture": "Competent",
+          "Testing": "Competent",
+          "Observability & Monitoring": "Competent",
+          "Documentation": "Competent",
+          "Agile & Lean Methodologies": "Competent",
+          "Domain-Based Skill Diversification": "Competent"
+        }
+      },
+      {
+        "category": "babbel wide soft skills",
+        "note": "Proficient in at least 4",
+
+        "levels": {
+          "Decision (taking)": "Competent",
+          "Prioritization": "Competent",
+          "Ownership": "Competent",
+          "Effective Communication": "Competent",
+          "Objective Setting": "Competent",
+          "Feedback": "Competent",
+          "Cooperative collaboration": "Competent"
+        }
+      },
+      {
+        "category": "engineering specific  soft skills",
+        "note": "Proficient in at least 2",
+        "levels": {
+          "Knowledge Sharing": "Competent",
+          "Problem solving": "Competent",
+          "Customer centricity": "Competent"
+        }
+      }
+    ]
+  },
+  {
+    "role": "principal",
+    "description": "Leads subject-matter chapters related to their expertise. Evangelizes good practices both in and outside of the team. Influences organization-wide decisions by providing Engineering input and collaborating with other relevant functions across the entire business. Shapes the product development by applying knowledge about our customers, demonstrating empathy with them, and leveraging their deep understanding of technology.",
+    "expectations": [
+      {
+        "category": "engineering hard skills",
+        "note": "Proficient in at least 3",
+        "levels": {
+          "Programming": "Proficient",
+          "Software Architecture": "Proficient",
+          "Systems Architecture": "Proficient",
+          "Testing": "Proficient",
+          "Observability & Monitoring": "Proficient",
+          "Documentation": "Proficient",
+          "Agile & Lean Methodologies": "Proficient",
+          "Domain-Based Skill Diversification": "Proficient"
+        }
+      },
+      {
+        "category": "babbel wide soft skills",
+        "note": "Proficient in at least 3",
+        "levels": {
+          "Decision (taking)": "Proficient",
+          "Prioritization": "Proficient",
+          "Ownership": "Proficient",
+          "Effective Communication": "Proficient",
+          "Objective Setting": "Proficient",
+          "Feedback": "Proficient",
+          "Cooperative collaboration": "Proficient"
+        }
+      },
+      {
+        "category": "engineering specific  soft skills",
+        "note": "Proficient in at least 1",
+        "levels": {
+          "Knowledge Sharing": "Proficient",
+          "Problem solving": "Proficient",
+          "Customer centricity": "Proficient"
+        }
+      }
+    ]
+  }
+]
