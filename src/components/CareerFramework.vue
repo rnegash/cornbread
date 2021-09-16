@@ -16,7 +16,7 @@
           </th>
           <table class="skill-table">
             <tr v-for="skill in category.skills" :key="skill">
-              <th class="skills-description">
+              <th scope="row" class="skills-description">
                 <strong>{{ skill.name }}</strong>
                 <br /><br />
                 <em>{{ skill.description }}</em>
