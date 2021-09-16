@@ -11,13 +11,14 @@
           :rowspan="category.skills.length"
           class="skills"
         >
-          <th :key="category.category" class="category">
+          <th scope="row" :key="category.category" class="category">
             {{ category.category }}
           </th>
           <table class="skill-table">
+            <caption>Tabulation of all criteria for a skill</caption>
             <tr v-for="skill in category.skills" :key="skill">
-              <th class="skills-description">
-                <b>{{ skill.name }}</b>
+              <th id="skills-header" class="skills-description">
+                <strong>{{ skill.name }}</strong>
                 <br /><br />
                 <em>{{ skill.description }}</em>
               </th>
@@ -28,7 +29,7 @@
                 class="level"
               >
                 <div v-if="level.criteria.length">
-                  <b>{{ level.level }}</b>
+                  <strong>{{ level.level }}</strong>
                   <br />
                   <ul v-for="criteria in level.criteria" :key="criteria">
                     <li>
