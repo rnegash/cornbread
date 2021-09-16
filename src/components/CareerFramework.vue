@@ -1,6 +1,6 @@
 <template>
   <div>
-    <table>
+    <table class="matrix-table">
       <caption>
         Dinosaurs in the Jurassic period
       </caption>
@@ -16,7 +16,7 @@
           </th>
           <table class="skill-table">
             <tr v-for="skill in category.skills" :key="skill">
-              <th class="skills">
+              <th class="skills-description">
                 <b>{{ skill.name }}</b>
                 <br /><br />
                 <em>{{ skill.description }}</em>
@@ -39,8 +39,6 @@
               </td>
             </tr>
           </table>
-
-
         </tr>
       </tbody>
     </table>
@@ -62,15 +60,18 @@ ul {
   padding: 0;
 }
 
-table {
-  width: 100%;
+.matrix-table {
+  table-layout: fixed;
+  border-collapse: collapse;
   text-align: left;
 }
+
 .skill-table {
   padding: 10px;
 }
 
-.skills {
+.skills-description {
+  padding: 10px;
   width: 500px;
 }
 
