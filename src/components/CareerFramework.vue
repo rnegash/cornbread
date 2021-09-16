@@ -18,6 +18,7 @@
           >
             {{ category.category }}
           </th>
+
           <table>
             <tr v-for="skill in category.skills" :key="skill">
               <td>
@@ -26,16 +27,21 @@
                 <em>{{ skill.description }}</em>
               </td>
               <td v-for="level in skill.levels" :key="level" class="level">
-                <b>{{ level.level }}</b
-                ><br />
-                <ul v-for="criteria in level.criteria" :key="criteria">
-                  <li>
-                    {{ criteria }}
-                  </li>
-                </ul>
+
+                <div v-if="level.criteria.length">
+                  <b>{{ level.level }}</b>
+                  <br />
+                  <ul v-for="criteria in level.criteria" :key="criteria">
+                    <li>
+                      {{ criteria }}
+                    </li>
+                  </ul>
+                </div>
               </td>
             </tr>
           </table>
+
+
         </tr>
       </tbody>
     </table>
