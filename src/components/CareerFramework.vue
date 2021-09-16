@@ -89,6 +89,7 @@ ul {
 
 .level {
   padding: 10px;
+  vertical-align: top;
 }
 
 .level b {
