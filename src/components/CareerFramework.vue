@@ -8,17 +8,13 @@
         <tr
           v-for="category in careerFrameworkData"
           :key="category.category"
+          :rowspan="category.skills.length"
           class="skills"
         >
-          <th
-            colspan="2"
-            :rowspan="category.skills.length"
-            :key="category.category"
-            class="category"
-          >
+          <th :key="category.category" class="category">
             {{ category.category }}
           </th>
-          <table>
+          <table class="skill-table">
             <tr v-for="skill in category.skills" :key="skill">
               <td>
                 <b>{{ skill.name }}</b
@@ -51,7 +47,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 ul {
   list-style-type: none;
@@ -59,18 +54,18 @@ ul {
 }
 
 table {
-  display: table;
   width: 100%;
   text-align: left;
 }
-.skills {
-  display: table;
+.skill-table {
+  padding: 10px;
 }
+
 .skills:nth-child(odd) {
   background-color: #e8e8e8;
 }
 .category {
-  padding: 15px;
+  padding: 0px 15px;
   writing-mode: sideways-lr;
 }
 .level {
