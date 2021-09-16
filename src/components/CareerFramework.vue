@@ -15,6 +15,7 @@
             {{ category.category }}
           </th>
           <table class="skill-table">
+            <caption>Tabulation of all requirements for a skill</caption>
             <tr v-for="skill in category.skills" :key="skill">
               <th scope="row" class="skills-description">
                 <strong>{{ skill.name }}</strong>
