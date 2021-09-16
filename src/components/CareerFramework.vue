@@ -30,8 +30,12 @@
                 <div v-if="level.criteria.length">
                   <b>{{ level.level }}</b>
                   <br />
-                  <ul v-for="criteria in level.criteria" :key="criteria">
-                    <li>
+                  <ul>
+                    <li
+                      v-for="criteria in level.criteria"
+                      :key="criteria"
+                      class="criteria"
+                    >
                       {{ criteria }}
                     </li>
                   </ul>
@@ -77,15 +81,23 @@ ul {
 .skills:nth-child(odd) {
   background-color: #e8e8e8;
 }
+
 .category {
   padding: 0px 15px;
   writing-mode: sideways-lr;
 }
+
 .level {
   padding: 10px;
 }
 
 .level b {
   text-transform: capitalize;
+}
+
+.criteria:not(:last-child) {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px black dotted;
 }
 </style>
