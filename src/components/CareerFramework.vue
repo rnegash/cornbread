@@ -80,7 +80,7 @@ table {
 }
 .category {
   padding: 0px 15px;
-  transform: rotate(-90deg);
+  writing-mode: sideways-lr;
 }
 .level {
   padding: 10px;
