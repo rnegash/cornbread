@@ -1,5 +1,6 @@
 <template>
   <div>
+    <LevelChooser @role-change="roleChanged" />
     <table aria-label="The entire skill matrix in table form" class="matrix-table">
       <tbody>
         <tr
@@ -12,8 +13,8 @@
             {{ category.category }}
           </th>
           <table aria-label="Tabulation of the requirements for a particular skill" class="skill-table">
-            <tr v-for="skill in category.skills" :key="skill">
-              <th scope="row" class="skills-description">
+            <tr v-for="skill in category.skills" :key="skill" >
+              <th scope="row" class="skills-description" >
                 <strong>{{ skill.name }}</strong>
                 <br /><br />
                 <em>{{ skill.description }}</em>
@@ -21,7 +22,7 @@
               <td
                 v-for="level in skill.levels"
                 :key="level"
-                :class="level.level"
+                :class="[level.level, skill.id]"
                 class="level"
               >
                 <div v-if="level.criteria.length">
@@ -47,12 +48,52 @@
 </template>
 
 <script>
-export default {
-  name: "CareerFramework",
-  props: {
-    careerFrameworkData: Array
-  }
-};
+  import LevelChooser from "./LevelChooser.vue";
+  export default {
+    name: "CareerFramework",
+    components: {
+      LevelChooser
+    },
+    props: {
+        careerFrameworkData: Array,
+        roleData: Array
+    },
+    methods:{
+      roleChanged(role){
+        console.log('whoah: ' + role);
+
+        let highlightedElements = document.querySelectorAll('.highlighted');
+        highlightedElements.forEach(e => e.classList.remove('highlighted'));
+
+
+        let filteredData = this.roleData.filter(function (e) {
+          return e.role===role;
+        });
+        
+        let levelDetails = filteredData[0].expectations.map(a => a.levels);
+        levelDetails.forEach(function doTheThing(element){          
+          Object.keys(element).forEach(function(key) {
+            if(element[key] !== 'N/A') {
+              let selector = '.' + key + '.' + element[key];
+              console.log(selector.toLowerCase());
+              let elements = document.querySelectorAll(selector.toLowerCase());
+              elements.forEach(e => e.classList.add("highlighted"));
+            }
+          });
+        });
+        
+        //Apply highlighted class to each of the above
+      }
+    },
+    data: function() {
+      return {
+        juniorSelected: false,
+        professionalSelected: false,
+        seniorSelected: false,
+        principalSelected: false
+      }     
+    }
+  };
 </script>
 
 <style scoped>
@@ -101,5 +142,9 @@ ul {
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 2px black dotted;
+}
+
+.highlighted {
+  background-color: Aquamarine;
 }
 </style>
