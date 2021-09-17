@@ -1,9 +1,6 @@
 <template>
   <div>
-    <table class="matrix-table">
-      <caption>
-        Dinosaurs in the Jurassic period
-      </caption>
+    <table aria-label="The entire skill matrix in table form" class="matrix-table">
       <tbody>
         <tr
           v-for="category in careerFrameworkData"
@@ -14,10 +11,7 @@
           <th scope="row" :key="category.category" class="category">
             {{ category.category }}
           </th>
-          <table class="skill-table">
-            <caption>
-              Tabulation of all requirements for a skill
-            </caption>
+          <table aria-label="Tabulation of the requirements for a particular skill" class="skill-table">
             <tr v-for="skill in category.skills" :key="skill">
               <th scope="row" class="skills-description">
                 <strong>{{ skill.name }}</strong>
