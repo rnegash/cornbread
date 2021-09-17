@@ -95,8 +95,6 @@
             }
           });
         });
-        
-        //Apply highlighted class to each of the above
       }
     }
   };
