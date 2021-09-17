@@ -14,10 +14,12 @@
   export default {
     name: "LevelChooser",
     props: {
+        identifier: String
     },
     methods: {
         onChange(event) {
-            this.$emit('role-change', event.target.value)
+            console.log(this.identifier);
+            this.$emit('role-change', {controlIdentifier: this.identifier, roleValue: event.target.value})
         }
     }
   };

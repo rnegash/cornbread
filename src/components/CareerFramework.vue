@@ -1,6 +1,9 @@
 <template>
   <div>
-    <LevelChooser @role-change="roleChanged" />
+    
+    <LevelChooser identifier="primary" @role-change="roleChanged" />
+    <LevelChooser identifier="secondary" @role-change="roleChanged" />
+
     <table aria-label="The entire skill matrix in table form" class="matrix-table">
       <tbody>
         <tr
@@ -59,11 +62,22 @@
         roleData: Array
     },
     methods:{
-      roleChanged(role){
+
+      roleChanged(eventObject){
+
+        let role = eventObject.roleValue;
+        let isHighlightedSelector = '';
+
+        if(eventObject.controlIdentifier === 'primary') {
+          isHighlightedSelector = 'highlighted'
+        }else {
+          isHighlightedSelector = 'second-highlight'
+        }
+
         console.log('whoah: ' + role);
 
-        let highlightedElements = document.querySelectorAll('.highlighted');
-        highlightedElements.forEach(e => e.classList.remove('highlighted'));
+        let highlightedElements = document.querySelectorAll('.' + isHighlightedSelector);
+        highlightedElements.forEach(e => e.classList.remove(isHighlightedSelector));
 
 
         let filteredData = this.roleData.filter(function (e) {
@@ -77,7 +91,7 @@
               let selector = '.' + key + '.' + element[key];
               console.log(selector.toLowerCase());
               let elements = document.querySelectorAll(selector.toLowerCase());
-              elements.forEach(e => e.classList.add("highlighted"));
+              elements.forEach(e => e.classList.add(isHighlightedSelector));
             }
           });
         });
@@ -137,6 +151,14 @@ ul {
 }
 
 .highlighted {
-  background-color: Aquamarine;
+  background-color: rgba(127, 255, 212, 0.5);
+}
+
+.second-highlight {
+  background-color: rgba(127, 193, 255, 0.5);
+}
+
+.highlighted.second-highlight {
+  background-color: rgba(127,227,232, 0.5);
 }
 </style>
