@@ -84,14 +84,6 @@
         
         //Apply highlighted class to each of the above
       }
-    },
-    data: function() {
-      return {
-        juniorSelected: false,
-        professionalSelected: false,
-        seniorSelected: false,
-        principalSelected: false
-      }     
     }
   };
 </script>
