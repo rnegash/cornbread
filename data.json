@@ -4,6 +4,7 @@
     "skills": [
       {
         "name": "Programming",
+        "id": "programming",
         "description": "Design and implementation of algorithms and data structures to solve computational problems. Writing effective, efficient, readable, robust, idiomatic, and reusable software code. Knowledge of and fluency in one or more (high-level) programming languages.",
         "levels": [
           {
@@ -48,6 +49,7 @@
       },
       {
         "name": "Software Architecture",
+        "id": "software-architecture",
         "description": "Design of the structure of a software application or service by defining the composition of components and their interaction with each other. Designing for maintainability, security, reusability, extensibility, and scalability. Knowledge of and application of relevant design patterns and paradigms.",
         "levels": [
           {
@@ -87,6 +89,7 @@
       },
       {
         "name": "Systems Architecture",
+        "id": "systems-architecture",
         "description": "Organization of multiple software applications and services into one or more fault-tolerant system, including their communication with each other.",
         "levels": [
           {
@@ -124,6 +127,7 @@
       },
       {
         "name": "Testing",
+        "id": "testing",
         "description": "Design and implementation of automated tests at various levels, that verify the validity of software routines, applications, services, or entire systems in accordance with established testing strategies as well as the design of these strategies.",
         "levels": [
           {
@@ -166,6 +170,7 @@
       },
       {
         "name": "Observability & Monitoring",
+        "id": "observability-and-monitoring",
         "description": "Measurement and analysis of technical and business metrics at network, system, and application level. Designing for maximum signal and minimum noise. Logging and tracing within and across systems. Implementation of effective alerting.",
         "levels": [
           {
@@ -205,6 +210,7 @@
       },
       {
         "name": "Documentation",
+        "id": "documentation",
         "description": "Externalization and preservation of knowledge about software applications, services, and systems for yourself and others in a concise, precise, understandable, pragmatic, and maintainable manner.",
         "levels": [
           {
@@ -244,6 +250,7 @@
       },
       {
         "name": "Agile & Lean Methodologies",
+        "id": "agile-and-lean-methodologies",
         "description": "Knowledge and application of agile & lean methodologies to collaboratively and cross-functionally build and deliver software increments in close collaboration with customers and other stakeholders. Continuous improvement of our products as well as our ways of working.",
         "levels": [
           {
@@ -286,6 +293,7 @@
       },
       {
         "name": "Domain-Based Skill Diversification",
+        "id": "domain-based-skill-diversification",
         "description": "Expansion of one’s hard skills beyond the general Engineering requirements by acquiring skills in other, relevant domains (e.g., User Experience Design, Linguistics, Marketing, Business Economics, …) and applying these skills to further enhance the product development.",
         "levels": [
           {
@@ -322,6 +330,7 @@
     "skills": [
       {
         "name": "Decision (taking)",
+        "id": "decision-taking",
         "description": "Takes effective decisions in a timely manner, sometimes with incomplete information.",
         "levels": [
           {
@@ -361,6 +370,7 @@
       },
       {
         "name": "Prioritization",
+        "id": "prioritization",
         "description": "Focuses and allocates time on what’s mission-critical and says no to what’s just nice to do.",
         "levels": [
           {
@@ -392,6 +402,7 @@
       },
       {
         "name": "Ownership",
+        "id": "ownership",
         "description": "Takes initiative for a topic. Shows responsibility for the quality and timeliness of an outcome even when working with others.",
         "levels": [
           {
@@ -428,6 +439,7 @@
       },
       {
         "name": "Effective Communication",
+        "id": "effective-communication",
         "description": "We get a message across in a targeted, constructive, effective and respectful way, even when we disagree.",
         "levels": [
           {
@@ -465,6 +477,7 @@
       },
       {
         "name": "Objective Setting",
+        "id": "objective-setting",
         "description": "Sets and pursues ambitious objectives with measurable milestones that move Babbel forward. Likewise, sets and pursues ambitious personal development objectives to further grow in their professional career.",
         "levels": [
           {
@@ -506,6 +519,7 @@
       },
       {
         "name": "Feedback",
+        "id": "feedback",
         "description": "Regularly provides constructive feedback and is open to receiving feedback",
         "levels": [
           {
@@ -545,6 +559,7 @@
       },
       {
         "name": "Cooperative collaboration",
+        "id": "cooperative-collaboration",
         "description": "Understands themself as part of a team of people who all bring in valuable different backgrounds & experiences and embraces it",
         "levels": [
           {
@@ -593,6 +608,7 @@
     "skills": [
       {
         "name": "Knowledge Sharing",
+        "id": "knowledge-sharing",
         "description": "Sharing knowledge, experience, expertise, or skills with individuals or groups, internally or externally, through different means (mentoring, coaching, collaboration, teaching, writing, presenting, ...).",
         "levels": [
           {
@@ -635,6 +651,7 @@
       },
       {
         "name": "Problem solving",
+        "id": "problem-solving",
         "description": "Application of knowledge - the difference between mere understanding of problems and their solutions and the capacity to discover the solutions.",
         "levels": [
           {
@@ -670,6 +687,7 @@
       },
       {
         "name": "Customer centricity",
+        "id": "customer-centricity",
         "description": "Knowledge of and empathy with our customers, their characteristics, needs, struggles, and desires. Utilizing this knowledge and empathy to shape our product development, so that we deliver solutions that meet their needs in a timely fashion.",
         "levels": [
           {

@@ -6,34 +6,34 @@
       {
         "category": "engineering hard skills",
         "levels": {
-          "Programming": "Beginner",
-          "Software Architecture": "Novice",
-          "Systems Architecture": "N/A",
-          "Testing": "Beginner",
-          "Observability & Monitoring": "Novice",
-          "Documentation": "Novice",
-          "Agile & Lean Methodologies": "Novice",
-          "Domain-Based Skill Diversification": "Novice"
+          "programming": "Beginner",
+          "software-architecture": "Novice",
+          "systems-architecture": "N/A",
+          "testing": "Beginner",
+          "observability-and-monitoring": "Novice",
+          "documentation": "Novice",
+          "agile-and-lean-methodologies": "Novice",
+          "domain-based-skill-diversification": "Novice"
         }
       },
       {
         "category": "babbel wide soft skills",
         "levels": {
-          "Decision (taking)": "Novice",
-          "Prioritization": "Novice",
-          "Ownership": "Novice",
-          "Effective Communication": "Novice",
-          "Objective Setting": "Novice",
-          "Feedback": "Novice",
-          "Cooperative collaboration": "Novice"
+          "decision-taking": "Novice",
+          "prioritization": "Novice",
+          "ownership": "Novice",
+          "effective-communication": "Novice",
+          "objective-setting": "Novice",
+          "feedback": "Novice",
+          "cooperative-collaboration": "Novice"
         }
       },
       {
         "category": "engineering specific  soft skills",
         "levels": {
-          "Knowledge Sharing": "Novice",
-          "Problem solving": "Novice",
-          "Customer centricity": "Novice"
+          "knowledge-sharing": "Novice",
+          "problem-solving": "Novice",
+          "customer-centricity": "Novice"
         }
       }
     ]
@@ -45,34 +45,34 @@
       {
         "category": "engineering hard skills",
         "levels": {
-          "Programming": "Competent",
-          "Software Architecture": "Competent",
-          "Systems Architecture": "Beginner",
-          "Testing": "Competent",
-          "Observability & Monitoring": "Competent",
-          "Documentation": "Competent",
-          "Agile & Lean Methodologies": "Competent",
-          "Domain-Based Skill Diversification": "Beginner"
+          "programming": "Competent",
+          "software-architecture": "Competent",
+          "systems-architecture": "Beginner",
+          "testing": "Competent",
+          "observability-and-monitoring": "Competent",
+          "documentation": "Competent",
+          "agile-and-lean-methodologies": "Competent",
+          "domain-based-skill-diversification": "Beginner"
         }
       },
       {
         "category": "babbel wide soft skills",
         "levels": {
-          "Decision (taking)": "Competent",
-          "Prioritization": "Competent",
-          "Ownership": "Beginner",
-          "Effective Communication": "Competent",
-          "Objective Setting": "Competent",
-          "Feedback": "Competent",
-          "Cooperative collaboration": "Competent"
+          "decision-taking": "Competent",
+          "prioritization": "Competent",
+          "ownership": "Beginner",
+          "effective-communication": "Competent",
+          "objective-setting": "Competent",
+          "feedback": "Competent",
+          "cooperative-collaboration": "Competent"
         }
       },
       {
         "category": "engineering specific  soft skills",
         "levels": {
-          "Knowledge Sharing": "Competent",
-          "Problem solving": "Competent",
-          "Customer centricity": "Competent"
+          "knowledge-sharing": "Competent",
+          "problem-solving": "Competent",
+          "customer-centricity": "Competent"
         }
       }
     ]
@@ -85,36 +85,36 @@
         "category": "engineering hard skills",
         "note": "Proficient in at least 4",
         "levels": {
-          "Programming": "Competent",
-          "Software Architecture": "Competent",
-          "Systems Architecture": "Competent",
-          "Testing": "Competent",
-          "Observability & Monitoring": "Competent",
-          "Documentation": "Competent",
-          "Agile & Lean Methodologies": "Competent",
-          "Domain-Based Skill Diversification": "Competent"
+          "programming": "Competent",
+          "software-architecture": "Competent",
+          "systems-architecture": "Competent",
+          "testing": "Competent",
+          "observability-and-monitoring": "Competent",
+          "documentation": "Competent",
+          "agile-and-lean-methodologies": "Competent",
+          "domain-based-skill-diversification": "Competent"
         }
       },
       {
         "category": "babbel wide soft skills",
         "note": "Proficient in at least 4",
         "levels": {
-          "Decision (taking)": "Competent",
-          "Prioritization": "Competent",
-          "Ownership": "Competent",
-          "Effective Communication": "Competent",
-          "Objective Setting": "Competent",
-          "Feedback": "Competent",
-          "Cooperative collaboration": "Competent"
+          "decision-taking": "Competent",
+          "prioritization": "Competent",
+          "ownership": "Competent",
+          "effective-communication": "Competent",
+          "objective-setting": "Competent",
+          "feedback": "Competent",
+          "cooperative-collaboration": "Competent"
         }
       },
       {
         "category": "engineering specific  soft skills",
         "note": "Proficient in at least 2",
         "levels": {
-          "Knowledge Sharing": "Competent",
-          "Problem solving": "Competent",
-          "Customer centricity": "Competent"
+          "knowledge-sharing": "Competent",
+          "problem-solving": "Competent",
+          "customer-centricity": "Competent"
         }
       }
     ]
@@ -127,36 +127,36 @@
         "category": "engineering hard skills",
         "note": "Expert in at least 3",
         "levels": {
-          "Programming": "Proficient",
-          "Software Architecture": "Proficient",
-          "Systems Architecture": "Proficient",
-          "Testing": "Proficient",
-          "Observability & Monitoring": "Proficient",
-          "Documentation": "Proficient",
-          "Agile & Lean Methodologies": "Proficient",
-          "Domain-Based Skill Diversification": "Proficient"
+          "programming": "Proficient",
+          "software-architecture": "Proficient",
+          "systems-architecture": "Proficient",
+          "testing": "Proficient",
+          "observability-and-monitoring": "Proficient",
+          "documentation": "Proficient",
+          "agile-and-lean-methodologies": "Proficient",
+          "domain-based-skill-diversification": "Proficient"
         }
       },
       {
         "category": "babbel wide soft skills",
         "note": "Expert in at least 3",
         "levels": {
-          "Decision (taking)": "Proficient",
-          "Prioritization": "Proficient",
-          "Ownership": "Proficient",
-          "Effective Communication": "Proficient",
-          "Objective Setting": "Proficient",
-          "Feedback": "Proficient",
-          "Cooperative collaboration": "Proficient"
+          "decision-taking": "Proficient",
+          "prioritization": "Proficient",
+          "ownership": "Proficient",
+          "effective-communication": "Proficient",
+          "objective-setting": "Proficient",
+          "feedback": "Proficient",
+          "cooperative-collaboration": "Proficient"
         }
       },
       {
         "category": "engineering specific  soft skills",
         "note": "Expert in at least 1",
         "levels": {
-          "Knowledge Sharing": "Proficient",
-          "Problem solving": "Proficient",
-          "Customer centricity": "Proficient"
+          "knowledge-sharing": "Proficient",
+          "problem-solving": "Proficient",
+          "customer-centricity": "Proficient"
         }
       }
     ]

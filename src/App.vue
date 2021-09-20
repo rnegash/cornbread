@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <CareerFramework :careerFrameworkData="careerFrameworkData" />
+    <CareerFramework :careerFrameworkData="careerFrameworkData" :roleData="roleData"/>
   </div>
 </template>
 
 <script>
 import careerFrameworkData from "../data.json";
+import roleData from "../roles.json";
 import CareerFramework from "./components/CareerFramework.vue";
 
 export default {
   name: "App",
   components: {
-    CareerFramework
+    CareerFramework,
   },
   data() {
     return {
-      careerFrameworkData
+      careerFrameworkData,
+      roleData
     };
   }
 };

@@ -1,5 +1,9 @@
 <template>
   <div>
+    
+    <LevelChooser identifier="primary" @role-change="roleChanged" />
+    <LevelChooser identifier="secondary" @role-change="roleChanged" />
+
     <table aria-label="The entire skill matrix in table form" class="matrix-table">
       <tbody>
         <tr
@@ -12,8 +16,8 @@
             {{ category.category }}
           </th>
           <table aria-label="Tabulation of the requirements for a particular skill" class="skill-table">
-            <tr v-for="skill in category.skills" :key="skill">
-              <th scope="row" class="skills-description">
+            <tr v-for="skill in category.skills" :key="skill" >
+              <th scope="row" class="skills-description" >
                 <strong>{{ skill.name }}</strong>
                 <br /><br />
                 <em>{{ skill.description }}</em>
@@ -21,7 +25,7 @@
               <td
                 v-for="level in skill.levels"
                 :key="level"
-                :class="level.level"
+                :class="[level.level, skill.id]"
                 class="level"
               >
                 <div v-if="level.criteria.length">
@@ -47,12 +51,53 @@
 </template>
 
 <script>
-export default {
-  name: "CareerFramework",
-  props: {
-    careerFrameworkData: Array
-  }
-};
+  import LevelChooser from "./LevelChooser.vue";
+  export default {
+    name: "CareerFramework",
+    components: {
+      LevelChooser
+    },
+    props: {
+        careerFrameworkData: Array,
+        roleData: Array
+    },
+    methods:{
+
+      roleChanged(eventObject){
+
+        let role = eventObject.roleValue;
+        let isHighlightedSelector = '';
+
+        if(eventObject.controlIdentifier === 'primary') {
+          isHighlightedSelector = 'highlighted'
+        }else {
+          isHighlightedSelector = 'second-highlight'
+        }
+
+        console.log('whoah: ' + role);
+
+        let highlightedElements = document.querySelectorAll('.' + isHighlightedSelector);
+        highlightedElements.forEach(e => e.classList.remove(isHighlightedSelector));
+
+
+        let filteredData = this.roleData.filter(function (e) {
+          return e.role===role;
+        });
+        
+        let levelDetails = filteredData[0].expectations.map(a => a.levels);
+        levelDetails.forEach(function doTheThing(element){          
+          Object.keys(element).forEach(function(key) {
+            if(element[key] !== 'N/A') {
+              let selector = '.' + key + '.' + element[key];
+              console.log(selector.toLowerCase());
+              let elements = document.querySelectorAll(selector.toLowerCase());
+              elements.forEach(e => e.classList.add(isHighlightedSelector));
+            }
+          });
+        });
+      }
+    }
+  };
 </script>
 
 <style scoped>
@@ -101,5 +146,17 @@ ul {
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 2px black dotted;
+}
+
+.highlighted {
+  background-color: rgba(127, 255, 212, 0.5);
+}
+
+.second-highlight {
+  background-color: rgba(127, 193, 255, 0.5);
+}
+
+.highlighted.second-highlight {
+  background-color: rgba(127,227,232, 0.5);
 }
 </style>
