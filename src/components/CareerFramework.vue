@@ -21,7 +21,7 @@
             aria-label="Tabulation of the requirements for a particular skill"
             class="skill-table"
           >
-            <tr v-for="skill in category.skills" :key="skill">
+            <tr v-for="skill in category.skills" :key="skill.id">
               <th scope="row" class="skills-description">
                 <strong>{{ skill.name }}</strong>
                 <br /><br />
@@ -29,7 +29,7 @@
               </th>
               <td
                 v-for="level in skill.levels"
-                :key="level"
+                :key="level.level"
                 :class="[level.level, skill.id]"
                 class="level"
               >
