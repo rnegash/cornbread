@@ -1,10 +1,12 @@
 <template>
   <div>
-    
     <LevelChooser identifier="primary" @role-change="roleChanged" />
     <LevelChooser identifier="secondary" @role-change="roleChanged" />
 
-    <table aria-label="The entire skill matrix in table form" class="matrix-table">
+    <table
+      aria-label="The entire skill matrix in table form"
+      class="matrix-table"
+    >
       <tbody>
         <tr
           v-for="category in careerFrameworkData"
@@ -15,9 +17,12 @@
           <th scope="row" :key="category.category" class="category">
             {{ category.category }}
           </th>
-          <table aria-label="Tabulation of the requirements for a particular skill" class="skill-table">
-            <tr v-for="skill in category.skills" :key="skill" >
-              <th scope="row" class="skills-description" >
+          <table
+            aria-label="Tabulation of the requirements for a particular skill"
+            class="skill-table"
+          >
+            <tr v-for="skill in category.skills" :key="skill">
+              <th scope="row" class="skills-description">
                 <strong>{{ skill.name }}</strong>
                 <br /><br />
                 <em>{{ skill.description }}</em>
@@ -51,53 +56,54 @@
 </template>
 
 <script>
-  import LevelChooser from "./LevelChooser.vue";
-  export default {
-    name: "CareerFramework",
-    components: {
-      LevelChooser
-    },
-    props: {
-        careerFrameworkData: Array,
-        roleData: Array
-    },
-    methods:{
+import LevelChooser from "./LevelChooser.vue";
+export default {
+  name: "CareerFramework",
+  components: {
+    LevelChooser
+  },
+  props: {
+    careerFrameworkData: Array,
+    roleData: Array
+  },
+  methods: {
+    roleChanged(eventObject) {
+      let role = eventObject.roleValue;
+      let isHighlightedSelector = "";
 
-      roleChanged(eventObject){
-
-        let role = eventObject.roleValue;
-        let isHighlightedSelector = '';
-
-        if(eventObject.controlIdentifier === 'primary') {
-          isHighlightedSelector = 'highlighted'
-        }else {
-          isHighlightedSelector = 'second-highlight'
-        }
-
-        console.log('whoah: ' + role);
-
-        let highlightedElements = document.querySelectorAll('.' + isHighlightedSelector);
-        highlightedElements.forEach(e => e.classList.remove(isHighlightedSelector));
-
-
-        let filteredData = this.roleData.filter(function (e) {
-          return e.role===role;
-        });
-        
-        let levelDetails = filteredData[0].expectations.map(a => a.levels);
-        levelDetails.forEach(function doTheThing(element){          
-          Object.keys(element).forEach(function(key) {
-            if(element[key] !== 'N/A') {
-              let selector = '.' + key + '.' + element[key];
-              console.log(selector.toLowerCase());
-              let elements = document.querySelectorAll(selector.toLowerCase());
-              elements.forEach(e => e.classList.add(isHighlightedSelector));
-            }
-          });
-        });
+      if (eventObject.controlIdentifier === "primary") {
+        isHighlightedSelector = "highlighted";
+      } else {
+        isHighlightedSelector = "second-highlight";
       }
+
+      console.log("whoah: " + role);
+
+      let highlightedElements = document.querySelectorAll(
+        "." + isHighlightedSelector
+      );
+      highlightedElements.forEach(e =>
+        e.classList.remove(isHighlightedSelector)
+      );
+
+      let filteredData = this.roleData.filter(function(e) {
+        return e.role === role;
+      });
+
+      let levelDetails = filteredData[0].expectations.map(a => a.levels);
+      levelDetails.forEach(function doTheThing(element) {
+        Object.keys(element).forEach(function(key) {
+          if (element[key] !== "N/A") {
+            let selector = "." + key + "." + element[key];
+            console.log(selector.toLowerCase());
+            let elements = document.querySelectorAll(selector.toLowerCase());
+            elements.forEach(e => e.classList.add(isHighlightedSelector));
+          }
+        });
+      });
     }
-  };
+  }
+};
 </script>
 
 <style scoped>
@@ -157,6 +163,6 @@ ul {
 }
 
 .highlighted.second-highlight {
-  background-color: rgba(127,227,232, 0.5);
+  background-color: rgba(127, 227, 232, 0.5);
 }
 </style>

@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <CareerFramework :careerFrameworkData="careerFrameworkData" :roleData="roleData"/>
+    <CareerFramework
+      :careerFrameworkData="careerFrameworkData"
+      :roleData="roleData"
+    />
   </div>
 </template>
 
@@ -12,7 +15,7 @@ import CareerFramework from "./components/CareerFramework.vue";
 export default {
   name: "App",
   components: {
-    CareerFramework,
+    CareerFramework
   },
   data() {
     return {
